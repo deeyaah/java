@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class FIB  {
+    public static void main (String[] args){
+        
+        int fib1=0,fib2=1,fib3,i,limit;
+        System.out.println("enter the limit");
+        Scanner s=new Scanner (System.in);
+        limit = s.nextInt();
+        System.out.println("The fibnocci series");
+        System.out.println(fib1);
+        System.out.println(fib2);
+        for(i=2;i<limit;i++){
+            fib3=fib1+fib2;
+            System.out.println(fib3);
+            fib1=fib2;
+            fib2=fib3;
+        }
+    }
+    
+}
