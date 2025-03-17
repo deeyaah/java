@@ -1,0 +1,28 @@
+package com.mycompany.exm;
+
+/**
+ *
+ * @author user
+ */
+
+import java.util.Scanner;
+
+public class cmconversion {
+    
+
+
+    public static void main(String[] args) {
+        double cm, inch, meter, km;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value in cm ");
+        cm = sc.nextFloat();
+
+        inch = cm / 2.54;
+        meter = cm / 100;
+        km = cm / 100000;
+        System.out.println("The value of" +" "+ cm + "in inches is" + inch);
+        System.out.println("The value of" +" "+ cm + "in meter is" + meter);
+        System.out.println("The value of" +" "+ cm + "in kilomteres is" + km);
+
+    }
+}
